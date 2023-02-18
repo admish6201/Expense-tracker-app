@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Expense Tracker App</title>
+	<style>
+		table {
+		  font-family: Arial, sans-serif;
+		  border-collapse: collapse;
+		  width: 100%;
+		}
+
+		td, th {
+		  border: 1px solid #dddddd;
+		  text-align: left;
+		  padding: 8px;
+		}
+
+		tr:nth-child(even) {
+		  background-color: #dddddd;
+		}
+
+		input[type=text], select {
+		  width: 100%;
+		  padding: 12px 20px;
+		  margin: 8px 0;
+		  display: inline-block;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  box-sizing: border-box;
+		}
+
+		input[type=button], input[type=submit], button {
+		  background-color: #4CAF50;
+		  border: none;
+		  color: white;
+		  padding: 12px 20px;
+		  text-decoration: none;
+		  margin: 8px 0;
+		  cursor: pointer;
+		  border-radius: 4px;
+		}
+
+		input[type=button]:hover, input[type=submit]:hover, button:hover {
+		  background-color: #45a049;
+		}
+
+		input[type=button]:active, input[type=submit]:active, button:active {
+		  background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<h1>Expense Tracker App</h1>
+
+	<div>
+		<label for="expense">Expense:</label>
+		<input type="text" id="expense" placeholder="Enter expense name">
+
+		<label for="amount">Amount:</label>
+		<input type="text" id="amount" placeholder="Enter expense amount">
+
+		<input type="button" value="Add Expense" onclick="addExpense()">
+	</div>
+
+	<table>
+		<tr>
+			<th>Expense Name</th>
+			<th>Amount</th>
+			<th>Edit</th>
+			<th>Delete</th>
+		</tr>
+	</table>
+
+	<script src="exps.js"></script>
+</body>
+</html>
